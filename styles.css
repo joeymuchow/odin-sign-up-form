@@ -10,6 +10,7 @@ body {
     display: flex;
     height: 100vh;
     font-size: 16px;
+    font-family: sans-serif;
 }
 
 .image-container {
@@ -53,4 +54,75 @@ a.credit:visited {
 
 .content-container {
     flex: 2 1 0;
+}
+
+.text-content {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 15% 30px 30px;
+    width: 66ch;
+}
+
+form > div {
+    border-top: 1px solid #E5E7EB;
+    border-bottom: 1px solid #E5E7EB;
+    box-shadow: 2px 2px 2px #E5E7EB;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form h2 {
+    margin: 0;
+    flex: 1 0 100%;
+}
+
+form h2 ~ div {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+form label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+form input {
+    width: min(70%, 300px);
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 4px 6px;
+}
+
+form input:focus {
+    border: 1px solid #0044FF;
+    outline: none;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+form input[type="password"]:invalid {
+    border: 1px solid #FF0000;
+}
+
+.create-account {
+    background-color: #596D48;
+    color: #ffffff;
+    border: 1px solid #596D48;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: 700;
+    margin: 30px;
+    width: min(150px, 20%);
+}
+
+form > p {
+    margin-left: 30px;
+}
+
+form a {
+    color: #596D48;
+    font-weight: 700;
+    text-decoration: none;
 }
