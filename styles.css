@@ -2,3 +2,55 @@
     font-family: "norse-bold";
     src: url(fonts/Norse-Bold.otf);
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    font-size: 16px;
+}
+
+.image-container {
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 1 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: max(15%, 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45%;
+}
+
+.logo-container h1 {
+    font-family: "norse-bold", sans-serif;
+    font-size: 5rem;
+}
+
+.logo {
+    height: 80%;
+}
+
+.credit-text {
+    position: absolute;
+    bottom: 0;
+}
+
+a.credit,
+a.credit:visited {
+    color: #ffffff;
+}
+
+.content-container {
+    flex: 2 1 0;
+}
